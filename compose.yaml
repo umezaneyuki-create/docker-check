@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: docker-check-web:1.0
+    container_name: docker-check-web
+    ports:
+      - "8090:8080"
